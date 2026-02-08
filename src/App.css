@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+:root{
+  --obsidian: #1a0a0f;
+  --rose: #f6e6ea;
+  --dark-red: #8c0007;
+  --berry: #e7b7c2;
+}
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.125em;
+  width: 100%;
+  max-width: 800px;
+  min-width: 300px;
+  border: 2px solid var(--berry);
+  border-radius: 12px;
+  padding: 30px 30px;
+  background: var(--obsidian)
+}
+
+.add-task{
+  display: flex;
+  border: 1px solid var(--berry); 
+  border-radius: 6px;
+}
+
+.add-task input{
+  width: 100%;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  font-size: 1.125em;
+  outline: none;
+}
+
+.add-task button{
+  background: transparent;
+  border-radius: 20px;
+  width: 50px;
+  border: 1px solid  var(--berry);
+  cursor: pointer;
+  font-size: 1.125em;
+  margin: 5px;
+}
+
+.added-task{
+  width: 100%;
+}
+
+.task-list{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.zero-task{
+  text-align: center;
+  list-style: none;
+}
+
+.edit, .complete, .delete, .save, .cancel{
+  background: transparent;
+  border: 1px solid var(--berry);
+  border-radius: 20px;
+  padding: 5px 5px;
+  cursor: pointer;
+  font-size: 1.125rem;
+}
+
+.edit-input{
+  flex: 1;
+  padding: 8px;
+  border: 1px solid var(--berry);
+  background: transparent;
+  outline: none;
+  color: var(--rose);
+  border-radius: 4px;
+  font-size: 1.125rem;
+  margin: 0 10px;
+}
+
+.task-list li{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  min-width: 100%;
+  border: 1px solid var(--berry);
+  border-radius: 6px;
+  font-size: 1.125em;
+  padding: 5px 5px;
+}
+
+.completed p{
+  text-decoration: line-through;
+  text-decoration-color: var(--berry);
+  color:  #e7b7c286;
+}
+
